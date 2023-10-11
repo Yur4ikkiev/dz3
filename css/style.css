@@ -1,0 +1,70 @@
+/* 10 */
+.wrapper__item {
+    background-color: red;
+    width: 50px;
+    height: 50px;
+    /* margin: 10px; */
+    float: left;
+    line-height: 50px;
+    text-align: center;
+}
+
+/* 11 */
+.wrapper__line::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* 40 */
+.wrapper__line:nth-child(odd) .wrapper__item:nth-child(even),
+/* 40 */
+.wrapper__line:nth-child(2n) .wrapper__item:nth-child(odd) {
+    background-color: green;
+}
+
+/* 10 */
+.wrapper__letter {
+    height: 25px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 25px;
+}
+
+/* 10 */
+.wrapper__number {
+    width: 25px;
+    line-height: 3em;
+    text-align: center;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+
+/* 10 */
+.empty {
+    width: 25px;
+    height: 25px;
+    background-color: brown;
+}
+
+/* 40 */
+.wrapper .wrapper__line .wrapper__item.wrapper__letter,
+/* 40 */
+.wrapper .wrapper__line .wrapper__item.wrapper__number,
+/* 40 */
+.wrapper .wrapper__line .wrapper__item.empty {
+    background-color: brown;
+}
+
+/* 1 */
+img {
+    width: 65%;
+    vertical-align: middle;
+}
+
+/* 50
+.wrapper .wrapper__line .wrapper__item .wrapper__50.empty{
+    background-color: brown;
+} */
